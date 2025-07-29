@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+<meta charset="utf-8" />
+<title>Survey Webpage</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1 id="title">Survey Webpage</h1>
+<p id="description">This is a webpage for taking a survey</p>
+<form method="post" id="survey-form">
+<fieldset>
+<label id="name-label" for="name">Full Name: <input type="text" id="name" placeholder="Enter Your Full Name" required/></label>
+<label id="email-label" for="email">Email: <input type="email" id="email" placeholder="Enter Your Email" required /></label>
+<label id="number-label" for="number">Number: <input type="number" min="24" max="2000" id="number" placeholder="Enter a number between 24 and 2000" required /></label>
+</fieldset>
+<fieldset>
+<legend>Choose Your Preferred Language</legend>
+<label for="dropdown"><select id="dropdown">
+<option value="">(choose a language)</option>
+<option value="1">English</option>
+<option value="2">French</option>
+<option value="3">Hausa</option>
+<option value="4">Japanese</option>
+<option value="5">Mandarin</option>
+</select></label>
+</fieldset>
+<fieldset>
+<legend>Choose Your Employment Type<legend>
+<label for="employee"><input type="radio" id="employee" value="employee" name="employment" checked> Employee </label>
+<label for="employer"><input type="radio" id="employer" value="employer" name="employment"> Employer</label>
+</fieldset>
+<fieldset>
+<legend>What Are Your Interests?</legend>
+<label for="web"><input type="checkbox" id="web" value="Web Development" name="interests"/> Web Dev.</label>
+<label for="cloud"><input type="checkbox" id="cloud" value="Cloud Computing" name="interests"/> Cloud Computing</label>
+<label for="big-data"><input type="checkbox" id="big-data" value="Big Data" name="interests"/> Big Data</label>
+<label for="robotics"><input type="checkbox" id="robotics" value="Robotics" name="interests"/> Robotics</label>
+<label for="devops"><input type="checkbox" id="devops" value="DevOps" name="interests"/> DevOps</label>
+<label for="support"><input type="checkbox" id="support" value="Tech Support" name="interests"/> Tech. Support</label>
+<label for="skills"><textarea placeholder="Write a brief highlight of your skills in this space..." id="skills" rows="4" cols="35"></textarea></label>
+</fieldset>
+<input type="submit" id="submit" value="Submit">
+</form>
+</body>
+</html>
