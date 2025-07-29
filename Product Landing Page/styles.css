@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(20, 30, 40);
+    color: linen;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(20, 30, 40);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+#header-img {
+    width: 60px;
+    height: 60px;
+left:0;
+}
+
+h1 {
+    color: #00beef;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+left: 50%;
+    width: 50%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    color: #00beef;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #00beef;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#breeds ul, .price-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#breeds li, .price-list li {
+    margin-bottom: 20px;
+}
+
+#breeds h3, .price-list h3 {
+    color: #00beef;
+}
+
+#video {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    display: block;
+    margin: 0 auto;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00beef;
+    border-radius: 4px;
+    background-color: rgb(30, 40, 50);
+    color: linen;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #00beef;
+    color: rgb(20, 30, 40);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #00a0d6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(15, 25, 35);
+    color: linen;
+}
+
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #header-img {
+        margin: 10px 10px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #video {
+        height: 200px;
+}
+}
